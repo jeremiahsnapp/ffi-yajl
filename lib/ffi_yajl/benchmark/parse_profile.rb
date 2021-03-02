@@ -5,8 +5,8 @@ require "rubygems" unless defined?(Gem)
 require_relative "../../ffi_yajl"
 begin
   require "perftools"
-rescue LoadError
-  puts "INFO: perftools.rb gem not installed"
+# rescue LoadError
+#   puts "INFO: perftools.rb gem not installed"
 end
 
 ENV["CPUPROFILE_FREQUENCY"] = "4000"

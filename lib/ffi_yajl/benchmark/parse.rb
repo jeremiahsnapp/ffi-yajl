@@ -13,11 +13,11 @@ else
 end
 begin
   require "json" unless defined?(JSON)
-rescue LoadError
+# rescue LoadError
 end
 begin
   require "oj"
-rescue LoadError
+# rescue LoadError
 end
 
 module FFI_Yajl

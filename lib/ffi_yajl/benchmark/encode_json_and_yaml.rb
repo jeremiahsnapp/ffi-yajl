@@ -6,7 +6,7 @@ require "benchmark" unless defined?(Benchmark)
 require "yajl"
 begin
   require "json" unless defined?(JSON)
-rescue LoadError
+# rescue LoadError
 end
 require "yaml" unless defined?(YAML)
 

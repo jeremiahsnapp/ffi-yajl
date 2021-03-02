@@ -6,11 +6,11 @@ require "benchmark" unless defined?(Benchmark)
 require "yajl"
 begin
   require "json" unless defined?(JSON)
-rescue LoadError
+# rescue LoadError
 end
 begin
   require "active_support"
-rescue LoadError
+# rescue LoadError
 end
 
 filename = "benchmark/subjects/twitter_stream.json"

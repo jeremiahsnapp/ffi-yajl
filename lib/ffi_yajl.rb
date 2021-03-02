@@ -43,8 +43,8 @@ elsif RUBY_PLATFORM == "java"
 else
   begin
     require_relative "ffi_yajl/ext"
-  rescue LoadError
-    warn "failed to load the ffi-yajl c-extension, falling back to ffi interface"
-    require_relative "ffi_yajl/ffi"
+  # rescue LoadError
+  #   warn "failed to load the ffi-yajl c-extension, falling back to ffi interface"
+  #   require_relative "ffi_yajl/ffi"
   end
 end

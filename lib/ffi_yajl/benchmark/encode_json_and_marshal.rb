@@ -7,7 +7,7 @@ require "yajl"
 require "stringio" unless defined?(StringIO)
 begin
   require "json" unless defined?(JSON)
-rescue LoadError
+# rescue LoadError
 end
 
 times = ARGV[0] ? ARGV[0].to_i : 1000

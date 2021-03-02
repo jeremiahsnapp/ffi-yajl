@@ -7,8 +7,8 @@ require "stringio" unless defined?(StringIO)
 if !defined?(RUBY_ENGINE) || RUBY_ENGINE !~ /jruby/
   begin
     require "yajl"
-  rescue LoadError
-    puts "INFO: yajl-ruby not installed"
+  # rescue LoadError
+  #   puts "INFO: yajl-ruby not installed"
   end
 else
   puts "INFO: skipping yajl-ruby on jruby"
@@ -16,13 +16,13 @@ end
 require_relative "../../ffi_yajl"
 begin
   require "json" unless defined?(JSON)
-rescue LoadError
-  puts "INFO: json gem not installed"
+# rescue LoadError
+#   puts "INFO: json gem not installed"
 end
 begin
   require "oj"
-rescue LoadError
-  puts "INFO: oj gem not installed"
+# rescue LoadError
+#   puts "INFO: oj gem not installed"
 end
 
 module FFI_Yajl

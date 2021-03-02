@@ -25,10 +25,10 @@ require "rubygems" unless defined?(Gem)
 require "libyajl2"
 begin
   require "ffi" unless defined?(FFI)
-rescue LoadError
-  $stderr.puts "FATAL: to use the ffi extension instead of the compiled C extension, the ffi gem must be installed"
-  $stderr.puts "       (it is optional, so you must include it in your bundle manually)"
-  exit 1
+# rescue LoadError
+#   $stderr.puts "FATAL: to use the ffi extension instead of the compiled C extension, the ffi gem must be installed"
+#   $stderr.puts "       (it is optional, so you must include it in your bundle manually)"
+#   exit 1
 end
 
 require_relative "map_library_name"

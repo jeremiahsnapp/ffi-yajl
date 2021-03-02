@@ -83,7 +83,7 @@ module FFI_Yajl
           dlopen(libname)
           found = true
           break
-        rescue ArgumentError
+        # rescue ArgumentError
         end
       end
       raise "cannot find yajl library for platform" unless found
@@ -100,7 +100,7 @@ module FFI_Yajl
         begin
           ffi_lib libname
           found = true
-        rescue LoadError
+        # rescue LoadError
         end
       end
       ffi_lib "yajl" unless found

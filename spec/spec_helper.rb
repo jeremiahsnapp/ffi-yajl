@@ -27,8 +27,8 @@ $LOAD_PATH << File.expand_path(File.join(File.dirname( __FILE__ ), "../lib"))
 # http://stackoverflow.com/questions/3232822/linking-with-multiple-versions-of-a-library
 begin
   require "yajl"
-rescue LoadError
-  puts "WARN: yajl cannot be loaded, expected if this is jruby"
+# rescue LoadError
+#   puts "WARN: yajl cannot be loaded, expected if this is jruby"
 end
 
 require "ffi_yajl"

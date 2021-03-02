@@ -10,8 +10,8 @@ module FFI_Yajl
       def run
         begin
           require "ruby-prof"
-        rescue LoadError
-          puts "INFO: perftools.rb gem not installed"
+        # rescue LoadError
+          # puts "INFO: perftools.rb gem not installed"
         end
 
         return if defined?(RubyProf)
